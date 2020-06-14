@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>Index </title> 
+    </head>
+    <body style="background-color: yellow;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="font-size: 20px">
+                <a class="navbar-brand" href="#">SYLVESTER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="color: white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    </ul>
+                    <span class="navbar-text">
+                   .
+                    </span>
+                </div>
+        </nav>
+        <div style=" padding: 2%;">
+            <div class="row">
+                <div class="col-9" style="background-color:darkslategrey; color: white; ">
+                <h1>Personal Analysis</h1>
+                <div style="text-align: center">
+                    
+                    <h3>WordCount</h3>
+                    <p>This chart shows person's most frequented word in all tweets. It gives information about person's talkincmdg subjects..</p>
+                    <img src="{{info.wordcount}}" alt="wordcount" width="50%"/>
+                    <hr style="border: white solid">
+                    <h3>Emotions Chart</h3>
+                    <p>This chart shows person's all tweets emotions. It gives information about person's emotional states.</p>
+                    <img src="{{info.emotions}}" alt="emotions" width="50%"/> <br><br>
+                    <hr style="border: white solid">
+                    <h3>Positive WordCount</h3>
+                    <p>This chart shows what a person's positive thoughts are all about. </p>
+                    <img src="{{info.pos_wordcount}}" alt="wordcount" width="50%"/>
+                    <hr style="border: white solid">
+                    <h3>Negative WordCount</h3>
+                    <p>This chart shows what a person's negative thoughts are all about. </p>
+                    <img src="{{info.neg_wordcount}}" alt="wordcount" width="50%"/>
+                    <br><br>
+                </div>
+                </div>
+                <div class="col-3" style="border-radius: 10%;">
+                        <div class="card" style="width: 100%;">
+                                <img src="{{ info.profile_photo}}" class="card-img-top" alt="Profile Photo">
+                                <div class="card-body">
+                                  <h4 class="card-title" style="text-align: center"> {{info.name}}</h5>
+                                  <h5 class="card-title">Username : {{username}}</h5>
+                                  <h5 class="card-title">Description :</h5> <h5> {{info.description}} </h5>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item"> <h5 class="card-title">Tweet Count : {{info.tweet_count}}</h5></li>
+                                  <li class="list-group-item"><h5 class="card-title">Follower : {{info.follower_count}}</h5></li>
+                                  <li class="list-group-item"><h5 class="card-title">Followed : {{info.followed_count}}</h5></li>
+                                  <li class="list-group-item"><h5 class="card-title">Location : {{info.location}}</h5></li>
+                                </ul>
+                                <!--
+                                <div class="card-body">
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>-->
+                              </div> 
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div style="background-color:black; color: white">
+               This project developed by Muhammed Pektaş. 
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

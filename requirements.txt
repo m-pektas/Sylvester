@@ -1,0 +1,8 @@
+flask==1.1.1
+tweepy==3.8.0
+seaborn==0.9.0
+pandas==0.25.0
+matplotlib==3.1.1
+nltk==3.4.5
+numpy==1.17.0
+wordcloud
